@@ -134,7 +134,7 @@ exports.forgot = function (req, res) {
         };
         const token = jwt.sign(payload, secret, { expiresIn: "15m" });
         // const link = `http://localhost:3000/reset-password/${user._id}/${token}`;
-        const link = `https://resume-builder-reactjs.herokuapp.com/reset-password/${user._id}/${token}`;
+        const link = `https://resumebuilderwebsite.herokuapp.com/reset-password/${user._id}/${token}`;
         // console.log(link);
         const message = {
           to: email,
